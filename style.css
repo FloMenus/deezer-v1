@@ -2,10 +2,40 @@ body {
     font-family: roboto;
     display: flex;
     flex-direction: column;
-
-    /* Header */
-
+    color: #323236;
 }
+    /*Font - Général */
+
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 13px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+
+/* Header */
 
 header {
     height: 90px;
@@ -27,8 +57,26 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
     margin-right: 50px;
+}
+
+.connexion-button {
+    background-color: #ffffff;
+    border-radius: 28px;
+    border: 2px solid #2d97c8;
+    color: #2d97c8;
+    padding: 7px 15px;
+    font-weight: bold;
+}
+
+.inscription-button {
+    background-color: #2d97c8;
+    border-radius: 28px;
+    border: 2px solid #2d97c8;
+    color: #ffffff;
+    padding: 7px 15px;
+    font-weight: bold;
 }
 
 .logo-deezer-header {
@@ -61,16 +109,37 @@ header {
 }
 
 .abonnement-3mois-buttons {
+    display: flex;
     margin-top: 30px;
+    gap: 13px;
 }
 
+.deezer-premium-button {
+    background-color: #ef5466;
+    border-radius: 28px;
+    border: 2px solid #ef5466;
+    color: #ffffff;
+    padding: 12px 30px;
+    font-weight: bold;
+}
+
+.deezer-gratuit-button {
+    background-color: #ffffff;
+    border-radius: 28px;
+    border: 2px solid #8e8e94;
+    color: #8e8e94;
+    padding: 12px 30px;
+    font-weight: bold;
+}
 /* Avantages */
 
 .avantages {
     display: flex;
     justify-content: center;
-    height: 550px;
+    height: 700px;
     gap: 50px;
+    background-color: #f9f9f9;
+    padding: 100px 0px 50px 0px;
 }
 
 .telephone-picture {
@@ -92,7 +161,9 @@ header {
     flex-direction: row;
 }
 
-.avantage-paragraph article {}
+.abonnement-3mois span {
+    color: #ef5466;
+}
 
 /* Partie rouge */
 
@@ -139,6 +210,10 @@ header {
     height: 450px;
     justify-content: center;
     gap: 40px;
+    box-shadow: -2px -1px 18px 2px rgba(128, 125, 125, 0.75);
+    -webkit-box-shadow: -2px -1px 18px 2px rgba(128, 125, 125, 0.75);
+    -moz-box-shadow: -2px -1px 18px 2px rgba(128, 125, 125, 0.75);
+
 }
 
 .abonnement-regroup {
@@ -148,8 +223,9 @@ header {
     gap: 5px;
 
 }
+
 .abonnement-premium {
-    background-color: darkcyan;
+    background-color: #2d96c8;
 }
 
 .inscription-gratuit-button {}
@@ -204,22 +280,26 @@ footer {
     align-items: center;
     justify-content: space-around;
 }
+
 .footer-bottom {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
+
 .socials {
     display: flex;
     flex-direction: row;
     gap: 25px;
 
 }
-.socials img{
+
+.socials img {
     width: 25px;
-    
+
 }
+
 .copyright-language {
     display: flex;
     flex-direction: row;
