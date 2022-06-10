@@ -1,0 +1,152 @@
+body {
+    font-family: roboto;
+    display: flex;
+    flex-direction: column; 
+
+/* Header */
+
+}
+header {
+    height: 90px;
+    border-bottom: 5px solid #f9f9f9;
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-right: 50px;
+}
+
+.logo-deezer-header {
+    width: 150px;
+    margin-left: 50px;
+}
+
+/* Abonnement 3 moi */
+
+.abonnement-3mois {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 500px;
+    background-image: url(img/hero.png);
+    background-position: right 90%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+.genre-musique {
+    width: 500px;
+}
+.abonnement-3mois-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin-left: 50px;   
+}
+.abonnement-3mois-buttons {
+    margin-top: 30px;
+}
+
+/* Avantages */
+
+.avantages {
+    display: flex;
+    justify-content:center;
+    height: 550px;
+    gap: 50px;
+}
+
+.telephone-picture {
+    margin-left: 10px;
+}
+.avantage-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 500px;
+    gap: 40px;
+    
+}
+.avantage-paragraph {
+    display: flex;
+    flex-direction: row;
+}
+.avantage-paragraph article {
+
+}
+
+/* Partie rouge */
+
+.appareils {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: #ef5466;
+    color:#f9f9f9;
+    height: 300px;
+    gap: 40px;
+
+}
+.appareils img {
+    width: 50px;
+}
+.appareil-pictures {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 2px 2px;
+}
+.appareil-text {
+    width: 300px;
+}
+
+/* Offres d'abonnements */
+
+.abonnements-offres {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.type-dabonnement {
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    width: 150px;
+    height: 450px;
+    justify-content: space-between;
+}
+.abonnement-regroup {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+
+}
+.abonnement-special-regroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.abonnement-special {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 150px;
+
+}
+.abonnement-special-text {
+    display: flex;
+    flex-direction: column;
+}

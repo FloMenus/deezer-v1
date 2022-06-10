@@ -9,6 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="reset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <title>Deezer</title>
 
 </head>
@@ -19,256 +27,274 @@
 
 <body>
 
-<!-- Navbar Haut de page -->
-
-    <nav class="nav-header">
-        <ul>
-            <li> <a href="index.html"> <img src="img/logo.png" alt="Page d'accueil"> </a></li>
-            <li> <a href="#">
-                    <p>Télécharger</p>
-                </a></li>
-            <li> <a href="#"> <button class="connexion-button">Connexion</button> </a></li>
-            <li> <a href="#"> <button class="inscription-button">Inscription</button> </a></li>
-        </ul>
-    </nav>
+    <!-- Header -->
+    <header>
+        <nav class="nav-header">
+            <a href="index.html"> <img class="logo-deezer-header" src="img/logo.png" alt="Page d'accueil"> </a>
+            <ul class="nav-list">
+                <li> <a href="#">
+                        <p>Télécharger</p>
+                    </a></li>
+                <li> <a href="#">
+                        <p>Offres</p>
+                    </a></li>
+                <li> <a href="#"> <button class="connexion-button">Connexion</button> </a></li>
+                <li> <a href="#"> <button class="inscription-button">Inscription</button> </a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
 
         <!-- Abonnement 3 mois -->
 
-        <section class="abonnement-3mois">
+        <div class="abonnement-3mois">
+            <section class="abonnement-3mois-text">
 
-            <article>
                 <h2>Vos émotions méritent d'avoir leur musique.</h2>
-            </article>
-            <article>
-                <h3>Profitez de 3 mois offerts pour essayer Deezer Premium*</h3>
-            </article>
-            <article>
-                <button class="deezer-premium-button">Deezer Premium</button>
-            </article>
-            <article>
-                <button class="deezer-gratuit-button">Deezer Gratuit</button>
-            </article>
-            <article> <img src="img/hero.png" alt="Genres de musiques disponibles sur Deezer">
-            </article>
 
-        </section>
+                <h3>Profitez de 3 mois offerts pour essayer Deezer Premium*</h3>
+                <article class="abonnement-3mois-buttons">
+                    <button class="deezer-premium-button">Deezer Premium</button>
+
+                    <button class="deezer-gratuit-button">Deezer Gratuit</button>
+                </article>
+            </section>
+        
+
+        </div>
 
         <!-- Avantages -->
 
-        <section class="avantages">
+        <div class="avantages">
 
-            <article>
-                <h2>Deezer, c'est quoi ?</h2>
-            </article>
-            <article>
-                <img src="img/phone.jpg" alt="Image de téléphone">
-            </article>
-            <article>
-                <h3>Toute votre musique dans votre poche</h3>
-                <p>Parmi 73 millions de titres, retrouvez de vieilles connaissances et laissez-vous séduire par de
-                    nouveaux coups de coeur.</p>
-            </article>
-            <article>
-                <h3>Pas de WiFi ? Pas de problème.</h3>
-                <p>Avec Deezer Premium, vous n'avez pas besoin d'être connecté à Internet pour profiter de votre musique
-                    préférée.</p>
-            </article>
-            <article>
-                <h3>Créez votre bibliothèque musicale.</h3>
-                <p>Recherchez parmi des millions de titres pour créer vos propres playlists et emportez-les partout avec
-                    vous.</p>
-            </article>
-            <article>
-                <h3>Un Deezer qui vous ressemble.</h3>
-                <p>Flow apprend à connaître ce que vous aimez et ce que vous n'aimez pas. Découvrez votre bande-son
-                    personnalisée.</p>
-            </article>
-        </section>
+
+            <img class="telephone-picture" src="img/phone.jpg" alt="Image de téléphone">
+            <section class="avantage-text">
+
+                <article>
+                    <h2>Deezer, c'est quoi ?</h2>
+                </article>
+                <section class="avantage-paragraph">
+                    <article>
+                        <h3>Toute votre musique dans votre poche</h3>
+                        <p>Parmi 73 millions de titres, retrouvez de vieilles connaissances et laissez-vous séduire par
+                            de
+                            nouveaux coups de coeur.</p>
+                    </article>
+                    <article>
+                        <h3>Pas de WiFi ? Pas de problème.</h3>
+                        <p>Avec Deezer Premium, vous n'avez pas besoin d'être connecté à Internet pour profiter de votre
+                            musique
+                            préférée.</p>
+                    </article>
+                    <article>
+                        <h3>Créez votre bibliothèque musicale.</h3>
+                        <p>Recherchez parmi des millions de titres pour créer vos propres playlists et emportez-les
+                            partout
+                            avec
+                            vous.</p>
+                    </article>
+                    <article>
+                        <h3>Un Deezer qui vous ressemble.</h3>
+                        <p>Flow apprend à connaître ce que vous aimez et ce que vous n'aimez pas. Découvrez votre
+                            bande-son
+                            personnalisée.</p>
+                    </article>
+                </section>
+            </section>
+        </div>
 
         <!-- Partie rouge -->
 
         <section class="appareils">
 
-            <article>
+            <article class="appareil-text">
                 <h2>Toujours avec vous</h2>
                 <p>De votre footing matinal jusqu'au dîner du soir, votre musique vous suit partout avec Deezer Premium.
                     Disponible tout le temps, sur tout vos appareils, même sans WiFi ni 4G.</p>
             </article>
-            <article>
-                <ul>
-                    <li><img src="img/redside-images/laptop.png" alt="Image de laptop"></li>
-                    <li><img src="img/redside-images/iphone.png" alt="Image de téléphone"></li>
-                    <li><img src="img/redside-images/smart-watch.png" alt="Image de montre"></li>
-                    <li><img src="img/redside-images/speaker.png" alt="Image d'enceinte"></li>
-                    <li><img src="img/redside-images/mini-speaker.png" alt="Image d'enceinte portable"></li>
-                    <li><img src="img/redside-images/television.png" alt="Image de télévision"></li>
-                    <li><img src="img/redside-images/electric-car.png" alt="Image de voiture"></li>
-                </ul>
-            </article>
+            <ul class="appareil-pictures">
+                <li><img src="img/redside-images/laptop.png" alt="Image de laptop"></li>
+                <li><img src="img/redside-images/iphone.png" alt="Image de téléphone"></li>
+                <li><img src="img/redside-images/smart-watch.png" alt="Image de montre"></li>
+                <li><img src="img/redside-images/speaker.png" alt="Image d'enceinte"></li>
+                <li><img src="img/redside-images/mini-speaker.png" alt="Image d'enceinte portable"></li>
+                <li><img src="img/redside-images/television.png" alt="Image de télévision"></li>
+                <li><img src="img/redside-images/electric-car.png" alt="Image de voiture"></li>
+            </ul>
 
         </section>
 
         <!-- Offres d'abonnements -->
 
-        <section class="abonnements-offres">
+        <div class="abonnements-offres">
 
-            <article>
-                <h2>Profitez de votre musique</h2>
-            </article>
+
+            <h2>Profitez de votre musique</h2>
+
             <!-- Deezer Gratuit -->
-            <article class="type-dabonnement">
-                <h3>Deezer Gratuit</h3>
-                <h3>0,00€</h3>
-                <p>/mois</p>
-                <ul>
-                    <li>
-                        <p><b>73 millions de titres</b></p>
-                    </li>
-                    <li>
-                        <p><b>Lecture aléatoire</b></p>
-                    </li>
-                    <li>
-                        <p>Sans publicité</p>
-                    </li>
-                    <li>
-                        <p>Zappez en illimité</p>
-                    </li>
-                    <li>
-                        <p>Mode hors connexion</p>
-                    </li>
-                    <li>
-                        <p>6 comptes</p>
-                    </li>
-                </ul>
-                <button class="inscription-gratuit">S'inscrire</button>
-                <a href="#">
-                    <h4>Plus d'infos</h4>
-                </a>
-            </article>
-            <!-- Deezer Premium -->
-            <article class="type-dabonnement">
-                <h3>Deezer Premium</h3>
-                <h3>9.99€</h3>
-                <p>/mois</p>
-                <ul>
-                    <li>
-                        <p><b>73 millions de titres</b></p>
-                    </li>
-                    <li>
-                        <p><b>Sans publicité</p>
-                    </li>
-                    <li>
-                        <p><b>Zappez en illimité</b></p>
-                    </li>
-                    <li>
-                        <p><b>Mode hors connexion</b></p>
-                    </li>
-                    <li>
-                        <p>6 comptes</p>
-                    </li>
-                </ul>
-                <h4>3 mois offerts</h4>
-                <a href="#"> <button class="inscription-payant">j'en profite</button>
+            <div class="abonnement-regroup">
+                <section class="type-dabonnement" class="abonnement-gratuit">
+                    <h3>Deezer Gratuit</h3>
+                    <h3>0,00€</h3>
+                    <p>/mois</p>
+                    <ul>
+                        <li>
+                            <p><b>73 millions de titres</b></p>
+                        </li>
+                        <li>
+                            <p><b>Lecture aléatoire</b></p>
+                        </li>
+                        <li>
+                            <p>Sans publicité</p>
+                        </li>
+                        <li>
+                            <p>Zappez en illimité</p>
+                        </li>
+                        <li>
+                            <p>Mode hors connexion</p>
+                        </li>
+                        <li>
+                            <p>6 comptes</p>
+                        </li>
+                    </ul>
+                    <button class="inscription-gratuit">S'inscrire</button>
                     <a href="#">
                         <h4>Plus d'infos</h4>
                     </a>
-            </article>
-            <!-- Deezer Famille -->
-            <article class="type-dabonnement">
-                <h3>Deezer Famille</h3>
-                <h3>14.99€</h3>
-                <p>/mois</p>
-                <ul>
-                    <li>
-                        <p><b>73 millions de titres</b></p>
-                    </li>
-                    <li>
-                        <p><b>Sans publicité</p>
-                    </li>
-                    <li>
-                        <p><b>Zappez en illimité</b></p>
-                    </li>
-                    <li>
-                        <p><b>Mode hors connexion</b></p>
-                    </li>
-                    <li>
-                        <p><b>6 comptes</b></p>
-                    </li>
-                </ul>
-                <h4>1 mois offerts</h4>
-                <a href="#"> <button class="inscription-payant">j'en profite</button></a>
-                <a href="#">
-                    <h4>Plus d'infos</h4>
-                </a>
-            </article>
+                </section>
+                <!-- Deezer Premium -->
+                <section class="type-dabonnement" class="abonnement-premium">
+                    <h3>Deezer Premium</h3>
+                    <h3>9.99€</h3>
+                    <p>/mois</p>
+                    <ul>
+                        <li>
+                            <p><b>73 millions de titres</b></p>
+                        </li>
+                        <li>
+                            <p><b>Sans publicité</p>
+                        </li>
+                        <li>
+                            <p><b>Zappez en illimité</b></p>
+                        </li>
+                        <li>
+                            <p><b>Mode hors connexion</b></p>
+                        </li>
+                        <li>
+                            <p>6 comptes</p>
+                        </li>
+                    </ul>
+                    <h4>3 mois offerts</h4>
+                    <a href="#"> <button class="inscription-payant">j'en profite</button>
+                        <a href="#">
+                            <h4>Plus d'infos</h4>
+                        </a>
+                </section>
+                <!-- Deezer Famille -->
+                <section class="type-dabonnement" class="abonnement-famille">
+                    <h3>Deezer Famille</h3>
+                    <h3>14.99€</h3>
+                    <p>/mois</p>
+                    <ul>
+                        <li>
+                            <p><b>73 millions de titres</b></p>
+                        </li>
+                        <li>
+                            <p><b>Sans publicité</p>
+                        </li>
+                        <li>
+                            <p><b>Zappez en illimité</b></p>
+                        </li>
+                        <li>
+                            <p><b>Mode hors connexion</b></p>
+                        </li>
+                        <li>
+                            <p><b>6 comptes</b></p>
+                        </li>
+                    </ul>
+                    <h4>3 mois offerts</h4>
+                    <a href="#"> <button class="inscription-payant">j'en profite</button></a>
+                    <a href="#">
+                        <h4>Plus d'infos</h4>
+                    </a>
+                </section>
+            </div>
             <!-- Details abonnements -->
-            <article>
-                <p class="abonnement-details"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, omnis.
-                    Maiores eligendi alias omnis temporibus corrupti beatae neque fugiat animi ullam? Est pariatur
-                    aperiam veniam aut accusantium, doloribus possimus nostrum?</p>
-            </article>
-            <!-- Abonnements spéciaux -->
-            <article class="abonnement-special">
-                <h3>Abonnement annuel<span>-25%</span></h3>
-                <p>Un an d'abonnement à Deezer Premium pour 89,90€ au lieu de 119,88€</p>
-                <a href="#">
-                    <p>En savoir plus</p>
-                </a>
-                <a href="#"><button class="abonnement-special-button">
-                        <h4>S'abonner</h4>
-                    </button>
-                </a>
-            </article>
-            <article class="abonnement-special">
-                <h3>Deezer HiFi</h3>
-                <p>Un son authentique pour 14,99 €/mois, 1 mois offert</p>
-                <a href="#">
-                    <button class="en-savoir-plus-button">
-                        <h4>En savoir plus</h4>
-                    </button>
-                </a>
-            </article>
-            <article class="abonnement-special">
-                <h3>Deezer Étudiant<span>-50%</span></h3>
-                <p>Premium pour seulement 4,99€/mois, 3 mois offerts</p>
-                <a href="#">
-                    <button class="en-savoir-plus-button">
-                        <h4>En savoir plus</h4>
-                    </button>
-                </a>
-            </article>
+            <p class="abonnement-details"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, omnis.
+                Maiores eligendi alias omnis temporibus corrupti beatae neque fugiat animi ullam? Est pariatur
+                aperiam veniam aut accusantium, doloribus possimus nostrum?</p>
 
-        </section>
+            <!-- Abonnements spéciaux -->
+            <div class="abonnement-special-regroup">
+                <section class="abonnement-special">
+                    <article class="abonnement-special-text">
+                        <h3>Abonnement annuel<span>-25%</span></h3>
+                        <p>Un an d'abonnement à Deezer Premium pour 89,90€ au lieu de 119,88€</p>
+                        <a href="#">
+                            <p>En savoir plus</p>
+                        </a>
+                    </article>
+                    <a href="#"><button class="abonnement-special-button">
+                            <h4>S'abonner</h4>
+                        </button>
+                    </a>
+                </section>
+                <section class="abonnement-special">
+                    <article class="abonnement-special-text">
+                        <h3>Deezer HiFi</h3>
+                        <p>Un son authentique pour 14,99 €/mois, 1 mois offert</p>
+                    </article>
+                    <a href="#">
+                        <button class="en-savoir-plus-button">
+                            <h4>En savoir plus</h4>
+                        </button>
+                    </a>
+                </section>
+                <section class="abonnement-special">
+                    <article class="abonnement-special-text">
+                        <h3>Deezer Étudiant<span>-50%</span></h3>
+                        <p>Premium pour seulement 4,99€/mois, 3 mois offerts</p>
+                    </article>
+                    <a href="#">
+                        <button class="en-savoir-plus-button">
+                            <h4>En savoir plus</h4>
+                        </button>
+                    </a>
+                </section>
+            </div>
+        </div>
 
 
     </main>
-<!-- Fin du main -->
+    <!-- Fin du main -->
 
-<!-- Footer -->
+    <!-- Footer -->
 
     <footer>
-            <!-- Boutons de téléchargement -->
+        <!-- Boutons de téléchargement -->
+        <article class="download-app">
+            <a href="#">
+                <button class="appstore-button">
+                    <h4>Télécharger dans l'App Store</h4>
+                </button>
+            </a>
             <article class="download-app">
                 <a href="#">
-                    <button class="appstore-button">
-                        <h4>Télécharger dans l'App Store</h4>
+                    <button class="googleplay-button">
+                        <h4>Disponible sur Google Play</h4>
                     </button>
                 </a>
-                <article class="download-app">
-                    <a href="#">
-                        <button class="googleplay-button">
-                            <h4>Disponible sur Google Play</h4>
-                        </button>
-                    </a>
-                </article>
+            </article>
 
         </article>
         <!-- Navbars footer -->
         <article>
 
             <nav class="nav-footer">
-                    <span><p>Deezer</p></span>
+                <span>
+                    <p>Deezer</p>
+                </span>
                 <ul>
                     <li><a href="#">Offres</a></li>
                     <li><a href="#">Fonctionnalités</a></li>
@@ -280,9 +306,11 @@
             </nav>
 
             <nav class="nav-footer">
-                
-                    <span><p>Explorer</p></span>
-                
+
+                <span>
+                    <p>Explorer</p>
+                </span>
+
                 <ul>
                     <li><a href="#">Tous les univers</a></li>
                     <li><a href="#">Top écoutes</a></li>
@@ -293,9 +321,11 @@
             </nav>
 
             <nav class="nav-footer">
-              
-                    <span><p>Explorer</p></span>
-               
+
+                <span>
+                    <p>Explorer</p>
+                </span>
+
                 <ul>
                     <li><a href="#">Tous les univers</a></li>
                     <li><a href="#">Top écoutes</a></li>
@@ -306,7 +336,9 @@
             </nav>
 
             <nav class="nav-footer">
-                    <span><p>Légal</p></span>
+                <span>
+                    <p>Légal</p>
+                </span>
                 <ul>
                     <li><a href="#">Mentions légales</a></li>
                     <li><a href="#">Conditions générales d'utilisation</a></li>
@@ -314,19 +346,27 @@
                     <li><a href="#">Cookies</a></li>
                 </ul>
             </nav>
-            
-        <article class="socials">
-            <a href="#"> <img src="img/facebook.png" alt="Lien Facebook"> </a>
-            <a href="#"> <img src="img/insta.png" alt="Lien Instagram"> </a>
-            <a href="#"> <img src="img/twitter.png" alt="Lien Twitter"> </a>
-            <a href="#"> <img src="img/YouTube.png" alt="Lien YouTube"> </a>
-        </article>
- 
-        <img src="img/logo.png" alt="Logo Deezer"></a>
 
-        <article class="copyright">
-            <span><p>© 2021 Deezer</p></span>
-        </article>
+            <article class="socials">
+                <a href="#"> <img src="img/facebook.png" alt="Lien Facebook"> </a>
+                <a href="#"> <img src="img/insta.png" alt="Lien Instagram"> </a>
+                <a href="#"> <img src="img/twitter.png" alt="Lien Twitter"> </a>
+                <a href="#"> <img src="img/YouTube.png" alt="Lien YouTube"> </a>
+            </article>
+
+            <img src="img/logo.png" alt="Logo Deezer"></a>
+
+            <article class="copyright">
+                <span>
+                    <p>© 2021 Deezer</p>
+                </span>
+                <select id="langue">
+                    <option value="français">Français</option>
+                    <option value="anglais">English</option>
+                    <option value="Chinois"> 汉语 </option>
+                    <option value="Arabe">العربية</option>
+                </select>
+            </article>
 
     </footer>
 </body>
