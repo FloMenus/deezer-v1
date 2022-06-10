@@ -1,14 +1,18 @@
 body {
     font-family: roboto;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 
-/* Header */
+    /* Header */
 
 }
+
 header {
     height: 90px;
     border-bottom: 5px solid #f9f9f9;
+    position: fixed;
+    width: 100%;
+    background-color: white
 }
 
 .nav-header {
@@ -40,19 +44,22 @@ header {
     justify-content: space-between;
     height: 500px;
     background-image: url(img/hero.png);
-    background-position: right 90%;
-    background-size: 60%;
+    background-position: right 100%;
+    background-size: 50%;
     background-repeat: no-repeat;
 }
+
 .genre-musique {
     width: 500px;
 }
-.abonnement-3mois-text{
+
+.abonnement-3mois-text {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    margin-left: 50px;   
+    justify-content: center;
+    margin-left: 50px;
 }
+
 .abonnement-3mois-buttons {
     margin-top: 30px;
 }
@@ -61,7 +68,7 @@ header {
 
 .avantages {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     height: 550px;
     gap: 50px;
 }
@@ -69,6 +76,7 @@ header {
 .telephone-picture {
     margin-left: 10px;
 }
+
 .avantage-text {
     display: flex;
     flex-direction: column;
@@ -76,15 +84,15 @@ header {
     justify-content: center;
     width: 500px;
     gap: 40px;
-    
+
 }
+
 .avantage-paragraph {
     display: flex;
     flex-direction: row;
 }
-.avantage-paragraph article {
 
-}
+.avantage-paragraph article {}
 
 /* Partie rouge */
 
@@ -94,20 +102,23 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #ef5466;
-    color:#f9f9f9;
+    color: #f9f9f9;
     height: 300px;
     gap: 40px;
 
 }
+
 .appareils img {
     width: 50px;
 }
+
 .appareil-pictures {
     display: flex;
     flex-direction: row;
     gap: 5px;
     margin: 2px 2px;
 }
+
 .appareil-text {
     width: 300px;
 }
@@ -119,34 +130,97 @@ header {
     flex-direction: column;
     gap: 40px;
 }
+
 .type-dabonnement {
     display: flex;
     flex-direction: column;
     border: solid black;
     width: 150px;
     height: 450px;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
 }
+
 .abonnement-regroup {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 5px;
 
 }
+.abonnement-premium {
+    background-color: darkcyan;
+}
+
+.inscription-gratuit-button {}
+
 .abonnement-special-regroup {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .abonnement-special {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     height: 150px;
+    background-color: #f9f9f9;
+
 
 }
+
 .abonnement-special-text {
     display: flex;
     flex-direction: column;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 70px 30px;
+
+}
+
+.app-download {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.app-button {
+    width: 120px;
+    height: 60px;
+}
+
+.nav-footer-regroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+}
+.socials img{
+    width: 25px;
+    
+}
+.copyright-language {
+    display: flex;
+    flex-direction: row;
 }
