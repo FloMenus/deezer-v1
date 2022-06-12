@@ -53,6 +53,11 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+    width: 100%;
+}
+.burger-menu {
+    width: 40px;
+    display: none;
 }
 
 .nav-list {
@@ -476,4 +481,30 @@ footer {
     font-size: 10px;
     color: #ffffff;
     background-color: black;
+}
+
+/* Responsive Mobile */ 
+
+@media screen and (max-width: 768px) {
+
+    /* Header */
+
+    .nav-header {
+        justify-content: flex-end;
+    }
+    .nav-list {
+        display: none;
+    }
+    .logo-deezer-header {
+        position: absolute; /* postulat de départ */
+        top: 50%; left: 50%; /* à 50%/50% du parent référent */
+        transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+        margin: 0%;
+    }
+    .burger-menu {
+        display: inline;
+        margin-right: 40px;
+    
+    }
+    
 }
