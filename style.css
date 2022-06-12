@@ -3,6 +3,11 @@ body {
     display: flex;
     flex-direction: column;
     color: #323236;
+   /* width: 100%; */
+}
+
+html {
+    width:  100%;
 }
 
 /*Font - Général */
@@ -492,8 +497,7 @@ footer {
 @media screen and (max-width: 768px) {
 
     h1 {
-        font-size: 50px;
-        width: 100%;
+        font-size: 45px;
         text-align: center;
     }
 
@@ -509,10 +513,6 @@ footer {
         font-size: 20px;
     }
 
-    main {
-        width: 100%;
-    }
-
     /* Header */
     header {
         width: 100%;
@@ -521,6 +521,7 @@ footer {
     .nav-header {
         justify-content: flex-end;
         width: 100%;
+        margin: 0%;
     }
 
     .nav-list {
@@ -537,14 +538,18 @@ footer {
 
     .burger-menu {
         display: inline;
-        margin-right: 40px;
+        padding-right: 40px;
+        padding-top: 15px;
+
 
     }
 
     /* Abonnement 3 mois */
     .abonnement-3mois {
-        margin-bottom: 200px;
+        padding-bottom: 300px;
         width: 100%;
+        background-position: bottom;
+        background-size: 350px;
     }
 
     .abonnement-3mois-text {
@@ -627,6 +632,7 @@ footer {
     }
 
     /*Abonnements Offres*/
+    
     .abonnement-offres {
         width: 100%;
         align-items: center;
@@ -655,7 +661,9 @@ footer {
     }
 
     /*Footer*/
-
+    footer {
+        width: 100%;
+    }
     .nav-footer-regroup {
         flex-direction: column;
         align-items: flex-start;
@@ -665,4 +673,5 @@ footer {
         flex-direction: column;
         gap: 70px;
     }
+
 }
