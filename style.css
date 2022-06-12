@@ -55,6 +55,7 @@ header {
     margin-top: 20px;
     width: 100%;
 }
+
 .burger-menu {
     width: 40px;
     display: none;
@@ -98,11 +99,12 @@ header {
 
 /* Abonnement 3 moi */
 
+
 .abonnement-3mois {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 500px;
+    margin-top: 70px;
     background-image: url(img/hero.png);
     background-position: right 100%;
     background-size: 50%;
@@ -117,6 +119,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 90px;
     margin-left: 50px;
 }
 
@@ -398,6 +401,7 @@ footer {
     flex-direction: column;
     background-color: black;
     padding: 70px 10px;
+    width: 100%;
 }
 
 .app-download {
@@ -483,28 +487,182 @@ footer {
     background-color: black;
 }
 
-/* Responsive Mobile */ 
+/* Responsive Mobile */
 
 @media screen and (max-width: 768px) {
 
+    h1 {
+        font-size: 50px;
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    main {
+        width: 100%;
+    }
+
     /* Header */
+    header {
+        width: 100%;
+    }
 
     .nav-header {
         justify-content: flex-end;
+        width: 100%;
     }
+
     .nav-list {
         display: none;
     }
+
     .logo-deezer-header {
-        position: absolute; /* postulat de départ */
-        top: 50%; left: 50%; /* à 50%/50% du parent référent */
-        transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         margin: 0%;
     }
+
     .burger-menu {
         display: inline;
         margin-right: 40px;
-    
+
     }
-    
+
+    /* Abonnement 3 mois */
+    .abonnement-3mois {
+        margin-bottom: 200px;
+        width: 100%;
+    }
+
+    .abonnement-3mois-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 200px;
+    }
+
+    .abonnement-3mois-text h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .abonnement-3mois-buttons {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .deezer-premium-button {
+        width: 90%;
+    }
+
+    .deezer-gratuit-button {
+        width: 90%;
+    }
+
+    /* Avantages */
+    .avantages {
+        width: 100%;
+        padding: 0px 5px 10px 5px;
+        height: 700px;
+
+    }
+
+    .avantages h2 {
+        margin-top: 40px;
+    }
+
+    .telephone-picture {
+        display: none;
+    }
+
+    .avantage-text {
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+    }
+
+    .avantage-paragraph {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 0px;
+    }
+
+    .avantage-paragraph article {
+        width: 100%;
+    }
+
+    /* Partie rouge */
+
+    .appareils {
+        flex-direction: column;
+        height: 500px;
+        margin-top: 0%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .appareil-text {
+        width: 100%;
+    }
+
+    /*Abonnements Offres*/
+    .abonnement-offres {
+        width: 100%;
+        align-items: center;
+    }
+
+    .abonnement-regroup {
+        flex-direction: column;
+    }
+
+    .type-dabonnement {
+        height: fit-content;
+        width: 100%;
+
+    }
+
+    .abonnement-details {
+        margin: 0px 10px 30px 10px;
+    }
+    .abonnement-special {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+    }
+    .abonnement-special p {
+        display: none;
+    }
+
+    /*Footer*/
+
+    .nav-footer-regroup {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 45px
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 70px;
+    }
 }
