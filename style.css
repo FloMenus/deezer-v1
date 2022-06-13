@@ -55,7 +55,7 @@ header {
 .nav-header {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     margin-top: 20px;
     width: 100%;
@@ -277,6 +277,11 @@ header {
 .abonnement-premium {
     background-color: #2d96c8;
     color: #ffffff;
+}
+.recommandation {
+    position: absolute;
+    top: 1500px;
+    color:#323236;
 }
 
 .type-dabonnement-nom {
@@ -514,9 +519,9 @@ footer {
     }
 
     /* Header */
-    header {
-        width: 100%;
-    }
+   main {
+    width: fit-content;
+   }
 
     .nav-header {
         justify-content: flex-end;
@@ -647,6 +652,9 @@ footer {
         height: fit-content;
         width: 100%;
 
+    }
+    .recommandation {
+        display: none;
     }
 
     .abonnement-details {
