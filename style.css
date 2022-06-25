@@ -3,12 +3,10 @@ body {
     display: flex;
     flex-direction: column;
     color: #323236;
-   /* width: 100%; */
+    /* width: 100%; */
 }
 
-html {
-    width:  100%;
-}
+html {}
 
 /*Font - Général */
 
@@ -49,7 +47,7 @@ header {
     border-bottom: 5px solid #f9f9f9;
     position: fixed;
     width: 100%;
-    background-color: white
+    background-color: white;
 }
 
 .nav-header {
@@ -57,8 +55,8 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
     width: 100%;
+    padding: 2% 0% ;
 }
 
 .burger-menu {
@@ -406,7 +404,6 @@ footer {
     flex-direction: column;
     background-color: black;
     padding: 70px 10px;
-    width: 100%;
 }
 
 .app-download {
@@ -436,7 +433,7 @@ footer {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
-    margin: 50px 5px;
+    margin: 50px 0px;
 }
 
 .nav-footer-regroup a {
@@ -495,6 +492,9 @@ footer {
 /* Responsive Mobile */
 
 @media screen and (max-width: 768px) {
+    html {
+        width: 100vw;
+    }
 
     h1 {
         font-size: 45px;
@@ -515,12 +515,12 @@ footer {
 
     /* Header */
     header {
-        width: 100%;
+        width: 100vw;
     }
 
     .nav-header {
         justify-content: flex-end;
-        width: 100%;
+        width: 100vw;
         margin: 0%;
     }
 
@@ -538,16 +538,26 @@ footer {
 
     .burger-menu {
         display: inline;
-        padding-right: 40px;
-        padding-top: 15px;
-
+        position: fixed;
+        top: 10px;
+        right: 20px;
 
     }
+
+    body {
+        width: 100vw;
+    }
+
+    main {
+        width: 100vw;
+        ;
+    }
+
 
     /* Abonnement 3 mois */
     .abonnement-3mois {
         padding-bottom: 300px;
-        width: 100%;
+        width: 100vw;
         background-position: bottom;
         background-size: 350px;
     }
@@ -584,9 +594,9 @@ footer {
 
     /* Avantages */
     .avantages {
-        width: 100%;
-        padding: 0px 5px 10px 5px;
-        height: 700px;
+
+        width: 100vw;
+        height: fit-content;
 
     }
 
@@ -602,11 +612,14 @@ footer {
         justify-content: center;
         align-items: center;
         padding: 0%;
-    
+        height: max-content;
+        width: auto;
+        height: auto;
+
     }
 
     .avantage-paragraph {
-        width: 100%;
+        width: 90vw;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -615,7 +628,7 @@ footer {
     }
 
     .avantage-paragraph article {
-        width: 100%;
+        width: 80vw;
     }
 
     /* Partie rouge */
@@ -625,17 +638,28 @@ footer {
         height: 500px;
         margin-top: 0%;
         text-align: center;
-        width: 100%;
+        width: 100vw;
     }
 
     .appareil-text {
         width: 100%;
     }
 
+    .appareil-pictures {
+
+        justify-content: center;
+        width: 90vw;
+        object-fit: contain;
+    }
+    .appareil-pictures img {
+        width: 40px;
+    }
+
+
     /*Abonnements Offres*/
-    
-    .abonnement-offres {
-        width: 100%;
+
+    .abonnements-offres {
+        width: 100vw;
         align-items: center;
     }
 
@@ -645,34 +669,49 @@ footer {
 
     .type-dabonnement {
         height: fit-content;
-        width: 100%;
+        width: 80vw;
 
     }
 
     .abonnement-details {
         margin: 0px 10px 30px 10px;
     }
+
     .abonnement-special {
         flex-direction: column;
         justify-content: center;
         gap: 5px;
+        width: 100vw;
+        padding: 0;
     }
+
     .abonnement-special p {
         display: none;
     }
 
     /*Footer*/
     footer {
-        width: 100%;
+        width: 90vw;
+        padding: 5%;
+        gap : 2%;
     }
+    .app-download {
+        margin-bottom: 5%;
+    }
+
     .nav-footer-regroup {
         flex-direction: column;
         align-items: flex-start;
-        gap: 45px
+        gap: 45px;
+        width: 80vw;
+        margin: 0 auto;
     }
+
     .footer-bottom {
         flex-direction: column;
         gap: 70px;
+        width: 90vw;
+        margin-top: 10%;
     }
 
 }
